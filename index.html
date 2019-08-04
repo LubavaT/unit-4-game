@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>Crystals Collector</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" type="text/css" media="screen" href="reset.css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="./assets/javascript/game.js"></script>
+</head>
+
+<body background="assets/images/background.png">
+	<header>
+		<h1 class="m-5 p-3 text-dark text-center">Gem Collector</h1>
+	</header>
+	<section>
+		<p class="text-dark ml-5 mr-5">You are be given a random number at the start of the game. There are 4 gems
+			below. By clicking on a gem, you will add a specific amount of points to your total score. You win the game
+			by matching your total score to the random number. You lose the game if your total score goes above the
+			random number. The value of each gem is hidden from you until you click on it.
+			Each time the game starts, the value of each gem will change.</p>
+	</section>
+
+	<section class="row d-flex justify-content-center">
+		<div class="col img-fluid d-flex justify-content-center mt-3"><img src="./assets/images/amethyst.png"
+				id="amethyst" alt="amethyst" style="height: 150px" class="btn" /></div>
+		<div class="col img-fluid d-flex justify-content-center mt-3"><img src="./assets/images/ruby.png"
+				id="emerald" alt="emerald" style="height: 150px" class="btn" /></div>
+		<div class="col img-fluid d-flex justify-content-center mt-3"><img src="./assets/images/diamond.png"
+				id="diamond" alt="diamond" style="height: 150px" class="btn" /></div>
+		<div class="col img-fluid d-flex justify-content-center mt-3"><img src="./assets/images/emerald.png" id="ruby"
+				alt="ruby" style="height: 150px" class="btn" /></div>
+	</section>
+	<section id="scoreboard" class="row text-light mx-auto justify-content-center">
+		<h3>Your total score is:</h3>
+		<h1 id="totalScore" class="ml-3">0</h1>
+	</section>
+	<section class="mx-auto justify-content-center row w-25 bg-warning text-light rounded shadow">
+		<div class="col">
+			<h3 class="justify-content-center row text-white p-2">Random Number</h3>
+			<h1 id="randomNumber" class="justify-content-center row text-light p-2">0</h1>
+		</div>
+	</section>
+	<section class="mx-auto justify-content-center row w-50 text-dark m-5">
+		<div id="wins" class="col m-2  d-flex justify-content-around">
+			<h3 class="text-light">Wins: <span id="totalWins" class="text-light">0</span></h3>
+		</div>
+		<div id="losses" class="col m-2 d-flex justify-content-around">
+			<h3 class="text-light">Losses: <span id="totalLosses" class="text-light">0</span></h3>
+		</div>
+	</section>
+</body>
+
+</html>
